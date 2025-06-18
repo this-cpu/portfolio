@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f0318151c1.js" crossorigin="anonymous"></script>
+    <style>
+        .main{
+            display: flex;
+            gap: 0.9rem;
+            box-shadow: 0px 5px 5px 2px black;
+            height: 50rem;
+            margin: 100px auto;
+            width: 80%;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            margin-top: 20px;
+              margin-left: 20px;
+              border-radius: 100px;
+        }
+        .first{
+            display: flex;
+            gap:100px;
+        }
+        .second{
+            display: flex;
+                 gap:100px;
+        }
+        .left
+        {
+            width: 40%;
+            background-image: linear-gradient(navy,black,crimson);
+            border-radius: 10px;
+        }
+        .right{
+            width: 70%;
+          
+        }
+        #name,#post{
+            color: white;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 50px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="photo.png" alt="">
+            <h2 id="name">Er. Lokesh Dhakal</h2>
+            <p id="post">Recent Passout from</p>
+            <p id="post">NCIT college</p>
+        </div>
+        <div class="right">
+            <h1>Information</h1>
+            <hr>
+            <div class="first">
+                <div class="email">
+                    <h3>Email</h3>
+                    <p>lokesh.234123@ncit.edu,np</p>
+                </div>
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <p>9845176177 of simanta sir</p>
+                    <p>9867572274</p>
+                </div>
+            </div>
+            <br><br>
+            <h1>Subject</h1>
+            <hr>
+             <div class="second">
+                <div class="recent">
+                    <h3>Recent</h3>
+                    <p>Web technology,Database</p>
+                </div>
+                <div class="View">
+                    <h3>Recent View</h3>
+                    <p>abcd.com</p>
+                </div>
+            </div>
+            <br>
+          <h1>Connect me</h1>
+            <hr>
+            <div class="third">
+                <a href="http://www.facebook.com">
+                    <i class="fa-brands fa-facebook fa-bounce"></i>
+                </a>
+                <a href="http://www.instagram.com">
+                    <i class="fa-brands fa-square-instagram fa-bounce" style="color: #c83cbc;"></i>
+                </a>
+                 <a href="http://www.youtube.com">
+                     <i class="fa-brands fa-youtube fa-bounce" style="color: red;"></i>
+                </a>
+
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
