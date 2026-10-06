@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lokesh Dhakal — Portfolio & Resume</title>
+  <meta name="description" content="Portfolio of Lokesh Dhakal — BE IT student, Customer Service Intern, and tutor exploring AI-assisted tools for small businesses.">
+  <meta property="og:title" content="Lokesh Dhakal — Portfolio">
+  <meta property="og:description" content="Customer Service Intern & BE IT student focused on clear support processes and practical, AI-assisted tools for small businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio.example.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="mouse-tracker" aria-hidden="true" inert></div>
+
+  <header class="topbar" id="topbar">
+    <div class="brand">
+      <span class="dot-accent"></span>
+      <div>
+        <div class="brand__title">Lokesh Dhakal</div>
+        <div class="brand__subtitle">BE IT Student · Customer Service Intern</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <ul id="nav-links"></ul>
+    </nav>
+    <div class="topbar__actions">
+      <button class="btn btn-ghost" data-print="resume">Download Resume</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" hidden>
+    <div class="modal__card">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__body">
+        <h3 id="project-modal-title"></h3>
+        <p class="muted" id="project-modal-type"></p>
+        <p id="project-modal-desc"></p>
+        <div class="pill-group" id="project-modal-tech"></div>
+        <div class="modal__actions">
+          <a id="project-modal-link" class="btn btn-primary" target="_blank" rel="noreferrer">Open demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p class="muted">© <span id="year"></span> Lokesh Dhakal</p>
+      <p class="muted">Lalitpur, Nepal · <a href="mailto:lokeshdhakal5@gmail.com">lokeshdhakal5@gmail.com</a></p>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script id="cms-data" type="application/json">
+    {
+      "meta": {
+        "title": "Lokesh Dhakal — Portfolio & Resume",
+        "description": "BE IT student and Customer Service Intern exploring AI-assisted tools for small businesses.",
+        "ogUrl": "http://localhost:8000"
+      },
+      "profile": {
+        "name": "Lokesh Dhakal",
+        "location": "Lalitpur, Nepal",
+        "email": "lokeshdhakal5@gmail.com",
+        "phone": "+977 9867572274",
+        "availability": "Open to internships/junior roles · Hybrid/Remote"
+      },
+      "roles": [
+        "BE IT student (NCIT, 2024–Present)",
+        "Customer Service Intern @ BiheNepal (Aug 2024–Present, Remote)",
+        "Private Tutor (Science & Math, Grades 8–9, Oct 2024–Present)"
+      ],
+      "hero": {
+        "headline": "Lokesh Dhakal — BE IT Student & Customer Service Intern",
+        "subhead": "Curious about building useful, AI-assisted tools for small businesses.",
+        "ctaPrimary": "View Projects",
+        "ctaSecondary": "Download Resume",
+        "ctaTertiary": "Apply (Compass Statement)"
+      },
+      "about": [
+        "Undergraduate BE IT @ NCIT, Lalitpur; exploring practical, human-centered tech.",
+        "Customer Service Intern @ BiheNepal: WhatsApp/email/Slack support, issue triage, collecting repro steps, prioritizing bugs, coordinating fixes.",
+        "Tutor (Science & Math, Grades 8–9): clear explanations, patient guidance, reflective teaching.",
+        "Learning goals: better web backends (PHP/MySQL), front-end polish, and prompt-driven flows with LLMs."
+      ],
+      "skills": [
+        "PHP", "MySQL/SQL", "HTML", "CSS", "JavaScript", "C", "C++", "LLM familiarity",
+        "Prompt Engineering", "Customer Support", "Issue Triage", "Documentation", "Tutoring"
+      ],
+      "experience": [
+        {
+          "role": "Customer Service Intern",
+          "company": "BiheNepal",
+          "time": "Aug 2024–Present · Remote",
+          "details": "Support (WhatsApp/email/Slack), collect repro steps, prioritize bugs, coordinate fixes, reflective practice."
+        },
+        {
+          "role": "Private Tutor",
+          "company": "Self-employed",
+          "time": "Oct 2024–Present",
+          "details": "Science & Math (Grades 8–9); structured lessons, examples, feedback loops."
+        }
+      ],
+      "projects": [
+        {
+          "id": "bookshop",
+          "name": "Bookshop Management System (Prototype)",
+          "kind": "Prototype",
+          "tech": ["PHP", "MySQL", "HTML/CSS/JS"],
+          "summary": "Authentication, search, cart/checkout, and inventory tools for a small bookshop.",
+          "cta": "Request demo",
+          "link": "mailto:lokeshdhakal5@gmail.com?subject=Bookshop%20Demo%20Request"
+        },
+        {
+          "id": "agri-game",
+          "name": "Agriculture Game (Hackathon Prototype)",
+          "kind": "Hackathon",
+          "tech": ["HTML", "CSS", "JavaScript"],
+          "summary": "Lightweight browser experience to explore farming concepts locally.",
+          "cta": "Request demo",
+          "link": "mailto:lokeshdhakal5@gmail.com?subject=Agriculture%20Game%20Demo"
+        }
+      ],
+      "education": [
+        {
+          "school": "NCIT",
+          "program": "BE in Information Technology",
+          "time": "2024–Present",
+          "coursework": "Programming, DBMS, web tech, networks"
+        }
+      ],
+      "statement": {
+        "summary": "I’m Lokesh, a BE IT student and Customer Service Intern focused on clear support processes and practical, AI-assisted tools for small businesses. Compass appeals to me because it emphasizes curiosity and reflection; I want to combine disciplined issue triage with hands-on building and share those learnings with my community.",
+        "full": "I’m an undergraduate BE IT student at NCIT in Lalitpur, Nepal, and a Customer Service Intern at BiheNepal. I’m drawn to the Compass Fellowship because it centers curiosity, reflection, and learning across unfamiliar domains. I want to pair disciplined support work—collecting repro steps, prioritizing bugs, and coordinating fixes—with building practical, AI-assisted tools for small businesses. My tutoring experience keeps me grounded in clarity and empathy. Compass would help me grow through structured reflection, peer feedback, and experimentation, so I can translate what I learn into useful products and better service for communities like mine."
+      }
+    }
+  </script>
+
+  <script>
+    const data = JSON.parse(document.getElementById('cms-data').textContent);
+    const app = document.getElementById('app');
+    const navLinks = document.getElementById('nav-links');
+    const sectionsConfig = [
+      { id: 'about', label: 'About' },
+      { id: 'skills', label: 'Skills' },
+      { id: 'experience', label: 'Experience' },
+      { id: 'projects', label: 'Projects' },
+      { id: 'education', label: 'Education' },
+      { id: 'statement', label: 'Statement' },
+      { id: 'contact', label: 'Contact' }
+    ];
+
+    document.title = data.meta.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', data.meta.description);
+
+    navLinks.innerHTML = sectionsConfig.map(section => (
+      `<li><a href="#${section.id}" data-target="${section.id}">${section.label}</a></li>`
+    )).join('');
+
+    const hero = `
+      <section class="hero" id="hero" data-section="hero">
+        <div class="hero__text">
+          <p class="eyebrow">${data.roles[0]}</p>
+          <h1>${data.hero.headline}</h1>
+          <p class="lede">${data.hero.subhead}</p>
+          <div class="hero__meta">
+            <span>${data.profile.location}</span>
+            <span>·</span>
+            <a href="mailto:${data.profile.email}" class="link">${data.profile.email}</a>
+            <span>·</span>
+            <span>${data.profile.phone}</span>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#projects">${data.hero.ctaPrimary}</a>
+            <button class="btn btn-ghost" data-print="resume">${data.hero.ctaSecondary}</button>
+            <a class="btn btn-secondary" href="#statement">${data.hero.ctaTertiary}</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-header">
+            <span class="pill pill-soft">Availability</span>
+            <span class="muted">${data.profile.availability}</span>
+          </div>
+          <div class="hero__card-body">
+            <ul class="list">
+              ${data.roles.map(r => `<li>${r}</li>`).join('')}
+            </ul>
+            <div class="cta-inline">
+              <a class="link" href="mailto:${data.profile.email}">Contact</a>
+              <span aria-hidden="true">·</span>
+              <button class="link" data-print="cv">Print CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+
+    const about = `
+      <section id="about" class="panel" data-section="about">
+        <div class="panel__header">
+          <p class="eyebrow">About</p>
+          <h2>Grounded in service, learning, and clarity.</h2>
+        </div>
+        <div class="panel__body two-col">
+          ${data.about.map(p => `<p>${p}</p>`).join('')}
+        </div>
+      </section>
+    `;
+
+    const skills = `
+      <section id="skills" class="panel" data-section="skills">
+        <div class="panel__header">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use</h2>
+        </div>
+        <div class="pill-group">
+          ${data.skills.map(skill => `<span class="pill">${skill}</span>`).join('')}
+        </div>
+      </section>
+    `;
+
+    const experience = `
+      <section id="experience" class="panel" data-section="experience">
+        <div class="panel__header">
+          <p class="eyebrow">Experience</p>
+          <h2>Recent work</h2>
+        </div>
+        <div class="timeline">
+          ${data.experience.map(item => `
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <div class="timeline__header">
+                  <h3>${item.role} · ${item.company}</h3>
+                  <span class="muted">${item.time}</span>
+                </div>
+                <p>${item.details}</p>
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    `;
+
+    const projects = `
+      <section id="projects" class="panel" data-section="projects">
+        <div class="panel__header">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="card-grid">
+          ${data.projects.map(project => `
+            <article class="card project" id="${project.id}">
+              <div class="card__top">
+                <span class="pill pill-soft">${project.kind}</span>
+              </div>
+              <h3>${project.name}</h3>
+              <p class="muted">${project.summary}</p>
+              <div class="pill-group">
+                ${project.tech.map(t => `<span class="pill">${t}</span>`).join('')}
+              </div>
+              <div class="card__actions">
+                <button class="btn btn-primary" data-project="${project.id}">${project.cta}</button>
+                <a class="btn btn-secondary" href="#${project.id}">Deep link</a>
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    `;
+
+    const education = `
+      <section id="education" class="panel" data-section="education">
+        <div class="panel__header">
+          <p class="eyebrow">Education</p>
+          <h2>Academic path</h2>
+        </div>
+        <div class="card-grid">
+          ${data.education.map(item => `
+            <article class="card">
+              <h3>${item.school}</h3>
+              <p class="muted">${item.program}</p>
+              <p class="muted">${item.time}</p>
+              <p>${item.coursework}</p>
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    `;
+
+    const statement = `
+      <section id="statement" class="panel" data-section="statement">
+        <div class="panel__header">
+          <p class="eyebrow">Statement</p>
+          <h2>Compass Fellowship</h2>
+        </div>
+        <div class="panel__body two-col">
+          <div>
+            <h3>Summary</h3>
+            <p>${data.statement.summary}</p>
+          </div>
+          <div>
+            <h3>Full Statement</h3>
+            <p>${data.statement.full}</p>
+          </div>
+        </div>
+        <div class="panel__actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <button class="btn btn-ghost" data-print="statement">Print Statement</button>
+        </div>
+      </section>
+    `;
+
+    const contact = `
+      <section id="contact" class="panel" data-section="contact">
+        <div class="panel__header">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s collaborate</h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <p>${data.profile.availability}</p>
+            <p class="muted">Email: <a href="mailto:${data.profile.email}">${data.profile.email}</a></p>
+            <p class="muted">Phone: <a href="tel:${data.profile.phone}">${data.profile.phone}</a></p>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/mzzbajby" method="POST">
+            <label>
+              Name
+              <input type="text" name="name" required aria-required="true">
+            </label>
+            <label>
+              Email
+              <input type="email" name="_replyto" required aria-required="true">
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required aria-required="true"></textarea>
+            </label>
+            <div class="contact-actions">
+              <button class="btn btn-primary" type="submit">Send</button>
+              <a class="btn btn-secondary" href="mailto:${data.profile.email}">Email directly</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    `;
+
+    app.innerHTML = hero + about + skills + experience + projects + education + statement + contact;
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll spy for nav
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const link = navLinks.querySelector(`a[data-target="${id}"]`);
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+          navLinks.querySelectorAll('a').forEach(a => a.removeAttribute('aria-current'));
+          if (link) link.setAttribute('aria-current', 'page');
+        }
+      });
+    }, { threshold: [0.4] });
+
+    document.querySelectorAll('[data-section]').forEach(section => observer.observe(section));
+
+    // Smooth scroll already via CSS; ensure keyboard focus
+    navLinks.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        e.preventDefault();
+        const target = document.querySelector(e.target.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          target.focus({ preventScroll: true });
+        }
+      }
+    });
+
+    // Project modal
+    const modal = document.getElementById('project-modal');
+    const modalClose = modal.querySelector('.modal__close');
+    const modalTitle = document.getElementById('project-modal-title');
+    const modalType = document.getElementById('project-modal-type');
+    const modalDesc = document.getElementById('project-modal-desc');
+    const modalTech = document.getElementById('project-modal-tech');
+    const modalLink = document.getElementById('project-modal-link');
+
+    app.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-project]');
+      if (trigger) {
+        const project = data.projects.find(p => p.id === trigger.getAttribute('data-project'));
+        if (!project) return;
+        modalTitle.textContent = project.name;
+        modalType.textContent = project.kind;
+        modalDesc.textContent = project.summary;
+        modalTech.innerHTML = project.tech.map(t => `<span class="pill">${t}</span>`).join('');
+        modalLink.textContent = project.cta || 'Open demo';
+        modalLink.href = project.link;
+        modal.removeAttribute('hidden');
+        modal.dataset.open = 'true';
+        modal.focus();
+      }
+    });
+
+    function closeModal() {
+      modal.setAttribute('hidden', 'true');
+      modal.dataset.open = 'false';
+    }
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.dataset.open === 'true') closeModal();
+    });
+
+    // Print views
+    function openPrintView(kind) {
+      const printable = `
+        <html>
+          <head>
+            <title>Lokesh Dhakal — ${kind === 'statement' ? 'Statement' : 'Resume'}</title>
+            <link rel="stylesheet" href="./styles.css">
+          </head>
+          <body class="print-surface">
+            <section class="print-page">
+              <h1>Lokesh Dhakal</h1>
+              <p>${data.profile.location} · ${data.profile.phone} · <a href="mailto:${data.profile.email}">${data.profile.email}</a></p>
+              <h2>${kind === 'statement' ? 'Compass Statement' : 'Resume'}</h2>
+              ${kind === 'statement'
+                ? `<p>${data.statement.full}</p>`
+                : `
+                  <h3>Roles</h3>
+                  <ul>${data.roles.map(r => `<li>${r}</li>`).join('')}</ul>
+                  <h3>Experience</h3>
+                  <ul>${data.experience.map(e => `<li><strong>${e.role}</strong> — ${e.company} (${e.time}) — ${e.details}</li>`).join('')}</ul>
+                  <h3>Education</h3>
+                  <ul>${data.education.map(ed => `<li><strong>${ed.school}</strong> — ${ed.program} (${ed.time}) — ${ed.coursework}</li>`).join('')}</ul>
+                  <h3>Projects</h3>
+                  <ul>${data.projects.map(p => `<li><strong>${p.name}</strong> — ${p.summary}</li>`).join('')}</ul>
+                `}
+            </section>
+            <script>window.onload = () => window.print();<\/script>
+          </body>
+        </html>
+      `;
+      const w = window.open('', '_blank');
+      w.document.write(printable);
+      w.document.close();
+    }
+
+    document.body.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-print]');
+      if (trigger) {
+        const kind = trigger.getAttribute('data-print');
+        openPrintView(kind);
+      }
+    });
+
+    // Mouse tracker
+    const tracker = document.getElementById('mouse-tracker');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion && !('ontouchstart' in window)) {
+      let x = 0, y = 0, tx = 0, ty = 0;
+      const speed = 0.12;
+      const loop = () => {
+        x += (tx - x) * speed;
+        y += (ty - y) * speed;
+        tracker.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        requestAnimationFrame(loop);
+      };
+      loop();
+      document.addEventListener('pointermove', (e) => {
+        if (e.target.closest('input, textarea, select')) {
+          tracker.style.opacity = '0';
+          return;
+        }
+        tracker.style.opacity = '1';
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      const interactiveSelector = 'a, button, .card';
+      document.querySelectorAll(interactiveSelector).forEach(el => {
+        el.addEventListener('pointerenter', () => tracker.classList.add('active'));
+        el.addEventListener('pointerleave', () => tracker.classList.remove('active'));
+      });
+    } else {
+      tracker.style.display = 'none';
+    }
+
+    // Schema.org Project
+    const projectSchema = {
+      "@context": "https://schema.org",
+      "@graph": data.projects.map(p => ({
+        "@type": "Project",
+        "name": p.name,
+        "description": p.summary,
+        "url": data.meta.ogUrl + '#' + p.id,
+        "creator": data.profile.name
+      }))
+    };
+    const ld = document.createElement('script');
+    ld.type = 'application/ld+json';
+    ld.textContent = JSON.stringify(projectSchema);
+    document.head.appendChild(ld);
+  </script>
+</body>
+</html>
